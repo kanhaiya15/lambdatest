@@ -1,6 +1,6 @@
 {
   "name": "@kanhaiyalalsingh/lambdatest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nodejs bindings for Kanhaiya lambdatest",
   "main": "index.js",
   "repository": "kanhaiya15/lambdatest",
@@ -11,9 +11,7 @@
   },
   "homepage": "https://github.com/kanhaiya15/lambdatest#readme",
   "dependencies": {
-    "elasticsearch": "^15.4.1",
     "request": "^2.88.0",
-    "winston": "^3.2.1",
-    "winston-elasticsearch": "^0.7.9"
+    "winston": "^3.2.1"
   }
 }

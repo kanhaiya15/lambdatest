@@ -16,9 +16,9 @@ var lambdaTestCredentials = {
 };
  
 // Automate API
-var client = LambdaTest.AutomationClient(lambdaTestCredentials);
+var lambdaClient = LambdaTest.AutomationClient(lambdaTestCredentials);
  
-automateClient.fetchBuilds(params?, function(e, builds) {
+lambdaClient.fetchBuilds(function(e, builds) {
   console.log("Get builds");
   console.log(builds);
 });
