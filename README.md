@@ -10,13 +10,13 @@ npm install @kanhaiyalalsingh/lambdatest
 
 ```js
 var lambdaRestClient = require("@kanhaiyalalsingh/lambdatest");
-var lambdaTestCredentials = {
+var lambdaCredentials = {
   username: "kanha",
-  password: "@%3464vc432#%jdsfdsnjgfdg"
+  accessKey: "@%3464vc432#%jdsfdsnjgfdg"
 };
  
 // Automation APIs
-var lambdaAutomationClient = lambdaRestClient.AutomationClient(lambdaTestCredentials);
+var lambdaAutomationClient = lambdaRestClient.AutomationClient(lambdaCredentials);
  
 lambdaAutomationClient.fetchBuilds(function(e, builds) {
   console.log("Get builds");
