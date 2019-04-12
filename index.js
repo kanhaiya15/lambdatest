@@ -1,4 +1,4 @@
-var lambdaAutomateClient = require("./lib/AutomationClient");
+var lambdaAutomationClient = require("./lib/AutomationClient");
 module.exports = {
-	AutomationClient: lambdaAutomateClient.AutomationClient
+	AutomationClient: lambdaAutomationClient.AutomationClient
 };
