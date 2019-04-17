@@ -26,8 +26,7 @@ lambdaAutomationClient.fetchBuilds(function(error, builds) {
   if (error) {
     console.log(error);
   }
-  console.log("Get builds");
-  console.log(builds);
+  console.log("Builds : " + builds);
 });
 ```
 
@@ -117,7 +116,7 @@ Fetch all the details of a particular test session by ID. Details that are fetch
 6. All generated logs endpoint
 
 - `sessionId` - a unique ID for the build type you wish to fetch.
-- `callback` (`function(error, sessions)`): A callback to invoke when the API call is complete.
+- `callback` (`function(error, session)`): A callback to invoke when the API call is complete.
 
 #### lambdaAutomationClient.deleteSessionById(sessionId, callback)
 
@@ -148,14 +147,14 @@ To extract step-by-step screenshot of a particular test session. The screenshots
 To fetch a recorded video of your test session.
 
 - `sessionId` - ID of the particular session for which you wish to fetch the recorded video.
-- `callback` (`function(error, videos)`): A callback to invoke when the API call is complete.
+- `callback` (`function(error, video)`): A callback to invoke when the API call is complete.
 
 #### lambdaAutomationClient.fetchSessionCommandLogs(sessionId, callback)
 
 To fetch the entire command logs of a test session in plain JSON text.
 
 - `sessionId` - ID of the particular session for which you wish to fetch the command logs.
-- `callback` (`function(error, logs)`): A callback to invoke when the API call is complete.
+- `callback` (`function(error, commandLogs)`): A callback to invoke when the API call is complete.
 
 #### lambdaAutomationClient.fetchSessionNetworkLogs(sessionId, callback)
 
@@ -194,4 +193,4 @@ Platform Object
 
 To fetch syntax for every browser and browser version offered by LambdaTest.
 
-- `callback` (`function(error, tunnels)`): A callback to invoke when the API call is complete.
+- `callback` (`function(error, platforms)`): A callback to invoke when the API call is complete.
